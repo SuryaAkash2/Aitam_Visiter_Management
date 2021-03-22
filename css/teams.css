@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', Helvetica;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+  overflow: hidden;
+  background-color: #EEEEEE;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 50px auto; }
+  .container .row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: -10px; }
+    .container .row .col {
+      margin-top: 10%;
+      margin-left: -35%;
+      padding: 220px;
+      felx-grow: 1; }
+    @media screen and (max-width: 900px) {
+      .container .row {
+        flex-direction: column; } }
+
+.usercard {
+  background: white;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-basis: 0;
+  width: 440px;
+  min-height: 320px;
+  margin-top: -40%;
+  margin-left: 6%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  border-radius: 4px; }
+  .usercard .usercard-avatar {
+    position: relative;
+    width: 50%;
+    z-index: 49;
+    overflow: hidden; }
+    .usercard .usercard-avatar .usercard-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .3s; }
+    .usercard .usercard-avatar:after {
+      content: '';
+      position: absolute;
+      right: -16%;
+      top: 0;
+      transform: skewx(-10deg);
+      height: 100%;
+      width: 20%;
+      min-width: 90px;
+      background: white; }
+  .usercard .usercard-body {
+    position: relative;
+    width: 50%;
+    padding: 40px 10px 20px; }
+    .usercard .usercard-body .usercard-title {
+      font-size: 30px;
+      margin-bottom: 6px; }
+    .usercard .usercard-body .usercard-badge {
+      padding: 4px 6px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 4px;
+      background: rgba(53, 70, 92, 0.1);
+      color: #35465c;
+      margin: 4px 0;
+      display: inline-block; }
+    .usercard .usercard-body .usercard-btn-container {
+      margin: 15px 0; }
+    .usercard .usercard-body .usercard-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      font-size: 25px;
+      color: white;
+      cursor: pointer;
+      opacity: .9; }
+      .usercard .usercard-body .usercard-btn:active {
+        opacity: 1; }
+      .usercard .usercard-body .usercard-btn.github {
+        background: #35465c; }
+      .usercard .usercard-body .usercard-btn.pinterest {
+        background: #bd081c; }
+      .usercard .usercard-body .usercard-btn.instagram {
+        background: #517fa4; }
+      .usercard .usercard-body .usercard-btn.twitter {
+        background: #55acee; }
+    button:hover{
+    box-shadow: 0 0 8px #C51B1B;
+}
+
+  .usercard:hover .usercard-img {
+    transform: scale(1.1) rotate(3deg); }
+#header1{
+  width: 100%;
+  height: 70px;
+  top: 0;
+  left: 0;
+  position:fixed;
+  display:flex;
+  align-items:center;
+  border: 2px solid #B8B8B8;
+}
+#header1 *{
+  display: inline;
+}
+#header1 ul{
+  list-style-type: none;
+  margin-left: 890px;
+}
+#header1 li a{
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;
+  font-size: 20px;
+  
+}
+#header1 h1{
+  margin-left: 20px;
+  font-size: 40px;
+}
+#logo{
+  height: 70px;
+}
+#foot{
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  margin-top: -10%;
+  position:fixed;
+  display:flex;
+  align-items:center;
+  border: 2px solid #B8B8B8;
+}
+#foot *{
+  display: inline;
+}
+#foot li a{
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+  font-size: 20px;
+  padding: 10px;
+}
+#foot ul{
+  list-style-type: none;
+  margin-left: 730px;
+}
+#foot h4{
+  font-size: 18px;
+  margin-left: 120px;
+}
